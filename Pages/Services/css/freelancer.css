@@ -53,14 +53,7 @@ header ul li a img{
     width: 160px;
   }
 /*--------------------------------------------------*/
-.wrapper {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
-}
+
 
 .shape1{
     position: absolute;
@@ -82,13 +75,90 @@ header ul li a img{
  text-align: center;
 }
 .recherche{
-   
-    border-radius: 35px;
-   
     margin-top: 5%;
     margin-left: 28%;
     width: 750px;
     height: 30vh;
+    background: #fff;
+    border-radius: 10px ;
+    border-color: #0048D3;
+    box-shadow: 10px 10px 10px #59585899;
+    position: relative;
+ 
+}
+.recherchebox{
+    display: flex;
+    /*justify-content: space-between;*/
+    background: #fff;
+    border: 2px solid  #0048D3;
+    position: absolute; /* set inner box position to absolute */
+  top: 50%; /* move the top of the inner box to the middle of the outer box */
+  left: 50%; /* move the left of the inner box to the middle of the outer box */
+  transform: translate(-50%, -50%); /* center the inner box using transform */
+  border-top-left-radius: 20px; /* arrondir le coin supérieur gauche */
+  border-top-right-radius: 20px; /* arrondir le coin supérieur droit */
+  border-bottom-left-radius: 20px; /* arrondir le coin inférieur gauche */
+  border-bottom-right-radius: 20px;
+ 
+}
+
+.recherchebox .dropdown .defaultOption{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-right: 2px solid #0048D3 ;
+    
+}
+.recherchebox .dropdown ul{
+    position: absolute;
+    border-radius: 5px;
+    top: 70px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+.recherchebox .dropdown ul.active{
+    display: block;
+}
+
+.recherchebox .dropdown ul li{
+    padding-bottom: 20px;
+    color: #a59d9d;
+    cursor: pointer;
+
+}
+.recherche .recherchebox .searchField{
+    width:  400px;
+    height: 60px;
+    position: relative;
+    padding-left: 30px;
+    
+    
+}
+
+.recherche .recherchebox .searchField input{
+    
+    height: 100%;
+    outline: none;
+    border: none;
+    
+}
+.recherche .recherchebox .searchField .searchLogo{
+
+    cursor: pointer;
+}
+.recherche .recherchebox .searchField .searchLogo i{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    line-height: 62px;
+    
+
+    width: 40px;
+
 }
 .recherche img{
     position: relative;
@@ -183,7 +253,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     margin-bottom: 50px;
 }
 .input-group {
@@ -342,3 +412,10 @@ footer .wave#wave4{
         transition: 0.4s;
     }}
  /*--------------------------------------------------------*/
+ .services-part{
+    background: #fff;
+        color: #000;
+        border-radius: 10px;
+        border-color: #0048D3;
+        
+ }
