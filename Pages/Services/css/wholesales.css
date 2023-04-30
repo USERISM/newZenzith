@@ -82,13 +82,90 @@ header ul li a img{
  text-align: center;
 }
 .recherche{
-   
-    border-radius: 35px;
-   
     margin-top: 5%;
     margin-left: 28%;
     width: 750px;
     height: 30vh;
+    background: #fff;
+    border-radius: 10px ;
+    border-color: #0048D3;
+    box-shadow: 10px 10px 10px #59585899;
+    position: relative;
+ 
+}
+.recherchebox{
+    display: flex;
+    /*justify-content: space-between;*/
+    background: #fff;
+    border: 2px solid  #0048D3;
+    position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+ 
+}
+
+.recherchebox .dropdown .defaultOption{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-right: 2px solid #0048D3 ;
+    
+}
+.recherchebox .dropdown ul{
+    position: absolute;
+    border-radius: 5px;
+    top: 70px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+.recherchebox .dropdown ul.active{
+    display: block;
+}
+
+.recherchebox .dropdown ul li{
+    padding-bottom: 20px;
+    color: #a59d9d;
+    cursor: pointer;
+
+}
+.recherche .recherchebox .searchField{
+    width:  400px;
+    height: 60px;
+    position: relative;
+    padding-left: 30px;
+    
+    
+}
+
+.recherche .recherchebox .searchField input{
+    
+    height: 100%;
+    outline: none;
+    border: none;
+    
+}
+.recherche .recherchebox .searchField .searchLogo{
+
+    cursor: pointer;
+}
+.recherche .recherchebox .searchField .searchLogo i{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    line-height: 62px;
+    
+
+    width: 40px;
+
 }
 .recherche img{
     position: relative;
