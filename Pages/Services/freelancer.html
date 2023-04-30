@@ -40,10 +40,9 @@
                     <div class="dropdown">
                         <div class="defaultOption">services</div>
                         <ul>
-                            <li><a href="./wholesales.html">WholeSale</a></li>
-                            <li><a href="./freelancer.html">Freelancer</a></li>
-                            <li><a href="./infulancer.html">Infulancer</a></li>
-                            
+                            <li onclick=" selectOption(TouchList)"><a href="./wholesales.html">WholeSale</a></li>
+                            <li onclick=" selectOption(TouchList)"><a href="./freelancer.html">Freelancer</a></li>
+                            <li onclick=" selectOption(TouchList)"><a href="./infulancer.html">Infulancer</a></li>
                         </ul>
                     </div>
               <div class="searchField">
@@ -53,7 +52,25 @@
                 </div>
               </div>
             </div>
+                 <div class="sugestion">
+                    
+                 </div>
           </div>
+
+          <script>
+            var defaultOption = document.querySelector('.defaultOption')
+            var ul = document.querySelector ('.ul')
+            defaultOption.onclick = function(){
+                ul.classList.toggle("active");
+            }
+
+            function selectOption(listItem){
+                var value =
+            }
+
+
+
+          </script>
            
         <a href="./erreur.html"> <div class="tablle">
             <img src="./img/Frame 364.svg" alt=""><img src="./img/about freelance service.svg" alt="">
