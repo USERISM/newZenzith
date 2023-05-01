@@ -190,7 +190,7 @@ border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 background: white;
 display: flex;
-width: 1300px;
+width: 1200px;
 height: 400px;
 box-shadow:10px 10px 10px #0000009d;
 
@@ -211,7 +211,7 @@ box-shadow:10px 10px 10px #0000009d;
 }
 
 .categorie-box .theimage img{
-    width: 950px;
+    width: 850px;
     cursor: pointer;
 
 }
