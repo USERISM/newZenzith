@@ -91,6 +91,7 @@ header ul li a img{
     border-color: #0048D3;
     box-shadow: 10px 10px 10px #59585899;
     position: relative;
+    
  
 }
 .recherchebox{
@@ -107,6 +108,8 @@ header ul li a img{
   border-bottom-left-radius: 10px; 
   border-bottom-right-radius: 10px;
  
+
+ 
 }
 
 .recherchebox .dropdown .defaultOption{
@@ -118,25 +121,16 @@ header ul li a img{
     border-right: 2px solid #0048D3 ;
     
 }
-.recherchebox .dropdown ul{
-    position: absolute;
-    border-radius: 5px;
-    top: 70px;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 20px;
-    display: none;
-}
-.recherchebox .dropdown ul.active{
-    display: block;
+.recherchebox .dropdown .defaultOption select{
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.recherchebox .dropdown ul li{
-    padding-bottom: 20px;
-    color: #a59d9d;
-    cursor: pointer;
 
-}
+
 .recherche .recherchebox .searchField{
     width:  400px;
     height: 60px;
@@ -146,11 +140,12 @@ header ul li a img{
     
 }
 
-.recherche .recherchebox .searchField input{
+.recherche .recherchebox .searchField  input{
     
     height: 100%;
     outline: none;
     border: none;
+    font-size: 20px;
     
 }
 .recherche .recherchebox .searchField .searchLogo{
@@ -160,36 +155,61 @@ header ul li a img{
 .recherche .recherchebox .searchField .searchLogo i{
     position: absolute;
     top: 0;
-    right: 1px;
+    right: 20px;
     line-height: 62px;
-    
-
     width: 40px;
 
 }
-.recherche img{
-    position: relative;
-   width: 700px;
-   cursor: pointer;
+.recherche .recherchebox .searchField .searchLogo img{
+    width: 62px;
+    
 }
+.sugestion p{ 
+    color: #3f3f3f;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    white-space:pre-wrap;
+    cursor: pointer;
+    
+    
+ }
+ 
 
 
+.categorie-box{
+    
+    color: #000;
+    font-size: 50px;
+    margin-top: 15%;
+    margin-left: 8%;
+}
 .categorie{
-margin-top: 15%;
-margin-left: 8%;
-cursor: pointer;
+
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+background: white;
+display: flex;
+width: 1300px;
+height: 400px;
+box-shadow:10px 10px 10px #0000009d;
+
+
 }
 .categorie img{
-    width: 1300px;
+    width: 300px;
+    margin-left: 10px;
 }
-.categorie2{
-margin-top: 5%;
-margin-left: 10%;
-cursor: pointer;
+.firstpic{
+    background-color: #8dadebf1;
+    display: flex;
+    width: 350px;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
-.categorie2 img{
-    width: 1300px;
-}
+
 /*--------------------------------------------------------*/
 
 footer{
@@ -207,7 +227,7 @@ footer{
    
     height: 250px;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: flex-start;
     justify-content: space-between;
 
@@ -222,7 +242,7 @@ footer{
 }
 .logo{
     width: 70px;
-    margin-bottom: 7%;
+   /* margin-bottom: 7%;*/
     color: #fff;
 }
 .col h3{

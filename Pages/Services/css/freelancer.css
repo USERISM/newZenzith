@@ -58,7 +58,7 @@ header ul li a img{
 .shape1{
     position: absolute;
     width: 1300px;
- margin-top: 24%;
+ margin-top: 10%;
 
    
  
@@ -84,6 +84,7 @@ header ul li a img{
     border-color: #0048D3;
     box-shadow: 10px 10px 10px #59585899;
     position: relative;
+    
  
 }
 .recherchebox{
@@ -100,6 +101,8 @@ header ul li a img{
   border-bottom-left-radius: 10px; 
   border-bottom-right-radius: 10px;
  
+
+ 
 }
 
 .recherchebox .dropdown .defaultOption{
@@ -111,25 +114,16 @@ header ul li a img{
     border-right: 2px solid #0048D3 ;
     
 }
-.recherchebox .dropdown ul{
-    position: absolute;
-    border-radius: 5px;
-    top: 70px;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 20px;
-    display: none;
-}
-.recherchebox .dropdown ul.active{
-    display: block;
+.recherchebox .dropdown .defaultOption select{
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.recherchebox .dropdown ul li{
-    padding-bottom: 20px;
-    color: #a59d9d;
-    cursor: pointer;
 
-}
+
 .recherche .recherchebox .searchField{
     width:  400px;
     height: 60px;
@@ -139,11 +133,12 @@ header ul li a img{
     
 }
 
-.recherche .recherchebox .searchField input{
+.recherche .recherchebox .searchField  input{
     
     height: 100%;
     outline: none;
     border: none;
+    font-size: 20px;
     
 }
 .recherche .recherchebox .searchField .searchLogo{
@@ -153,18 +148,24 @@ header ul li a img{
 .recherche .recherchebox .searchField .searchLogo i{
     position: absolute;
     top: 0;
-    right: 1px;
+    right: 20px;
     line-height: 62px;
-    
-
     width: 40px;
 
 }
-.recherche img{
-    position: relative;
-   width: 700px;
-   cursor: pointer;
+.recherche .recherchebox .searchField .searchLogo img{
+    width: 62px;
+    
 }
+.sugestion p{ 
+    color: #3f3f3f;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    white-space:pre-wrap;
+    cursor: pointer;
+    
+ }
 .tablle{
     margin-top: 9%;
     margin-left: 10%;
@@ -237,21 +238,32 @@ header ul li a img{
     
     
     
+    
 }
 .idkwhatboxes .box{
     background: #0048D3;
-    border-top-left-radius: 5px; 
-    border-top-right-radius: 5px; 
-    border-bottom-left-radius: 5px; 
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
     width: 130px;
-    height: 180px;
+    height: 190px;
     margin-left: 80px;
     margin-right: 80px;
-   
-    
+    align-items: center;
+    text-align: center;
+    display: "flex";
     
 }
+.idkwhatboxes .box img{
+    margin-top: 10px;
+}
+
+.idkwhatboxes .box p{
+    color: #fff;
+    font-size: 20px;
+}
+
 
 
 
@@ -262,13 +274,15 @@ header ul li a img{
 .categorie{
     margin-top: 5%;
     margin-left: 8%;
-    cursor: pointer;
+    white-space: nowrap;
+    align-items: center;
+    
     }
     .categorie img{
         width: 300px;
     }
     .categorie .viewmore img{
-        width: 50px;
+        width: 60px;
     }
 .categorie h1{
         color: #0048D3;
@@ -276,6 +290,12 @@ header ul li a img{
         font-size: 40px;
         font-style: normal;
     }
+
+.viewmore{
+    display: inline-block;
+ 
+    
+}
     /*--------------------------------------------------------*/
 
 footer{

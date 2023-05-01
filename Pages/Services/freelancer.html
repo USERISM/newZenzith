@@ -38,39 +38,32 @@
         <div class="recherche">
             <div class="recherchebox">
                     <div class="dropdown">
-                        <div class="defaultOption">services</div>
-                        <ul>
-                            <li onclick=" selectOption(TouchList)"><a href="./wholesales.html">WholeSale</a></li>
-                            <li onclick=" selectOption(TouchList)"><a href="./freelancer.html">Freelancer</a></li>
-                            <li onclick=" selectOption(TouchList)"><a href="./infulancer.html">Infulancer</a></li>
-                        </ul>
-                    </div>
-              <div class="searchField">
-                <input type="text" class="inputSearchField" value="Search">
-                <div class="searchLogo">
-                <i class="fa fa-search"></i>
-                </div>
-              </div>
-            </div>
-                 <div class="sugestion">
+                        <div class="defaultOption">
+                        <select id="operation" name="operation" class="custom-select">
+                            <option ></option>
+                            <option value="" selected>Services</option>
+                            <option value="./freelancer.html">freelancers</option>
+                            <option value="./wholesales">WholeSale</option>
+                            <option value="./infulancer.html">Infulancer</option>
+                            
+                        </select>
+                    </div></div>
                     
-                 </div>
+              <div class="searchField">
+                <input type="search" class="inputSearchField" value="Select a Service">
+                <div class="searchLogo">
+                <i><img src="./img/Group 110.svg" alt=""></i>
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="sugestion">
+                <p>Bags        Earphones        Shoes ...</p>
+            </div>    
           </div>
 
-          <script>
-            var defaultOption = document.querySelector('.defaultOption')
-            var ul = document.querySelector ('.ul')
-            defaultOption.onclick = function(){
-                ul.classList.toggle("active");
-            }
-
-            function selectOption(listItem){
-                var value = listItem.innerHTML;
-            }
-
-
-
-          </script>
+       
            
         <a href="./erreur.html"> <div class="tablle">
             <div class="hiAhmed">
@@ -149,13 +142,11 @@
          
        <div class="categorie">
         <h1>3d Artists</h1>
+        
         <a href="./erreur.html"><img src="./img/Group 109.svg" alt=""></a> 
         <a href="./erreur.html"><img src="./img/Group 108.svg" alt=""></a>
         <a href="./erreur.html"><img src="./img/Group 107.svg" alt=""></a>
         <a href="./erreur.html"><img src="./img/Group 94.svg" alt=""></a>
-        
-
-
         <div class="viewmore">
             <a href="./erreur.html"><img src="./img/View more - button.svg" alt=""></a>
               </div>
